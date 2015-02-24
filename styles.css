@@ -1,0 +1,26 @@
+#page .elplay .activityinstance a:link, #page .elplay .activityinstance a:visited{text-decoration:none;color: #000;}
+.elplay .contentafterlink > .no-overflow {padding-left:300px;}
+.elplay .elplinks{
+display: inline-block;
+margin: 1px 10px 1px -300px; 
+width:186px;}
+a.elplaybtn, a.elplaybtn:visited, a.eldownloadbtn, a.eldownloadbtn:visited{
+display:inline-block;
+margin: 4px 4px 4px 0;
+padding:4px 2px 2px 28px;
+min-height: 22px;
+background:transparent url([[pix:electaplayback|play]]) no-repeat 2px center;
+font-size: 90%; 
+}
+a.eldownloadbtn{background-image: url([[pix:electaplayback|download]]);}
+.elpcontent {
+display:inline-block;
+width:95px;
+text-align:right;
+}
+.ie8 .elpcontent, .ie7 .elpcontent {float:left;}
+.elplay .no-overflow .no-overflow {margin-top: -2.1em;}
+/* for conditional access */
+.dimmed_text .elplinks a {visibility:hidden;}
+.dimmed_text.conditionalhidden .elplinks a {visibility:visible;}
+#page .elplay .activityinstance a.dimmed:link, #page .elplay .activityinstance a.dimmed:visited{color: #999;}

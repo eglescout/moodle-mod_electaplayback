@@ -1,0 +1,15 @@
+﻿<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <title>play</title>
+ <defs>
+  <linearGradient id="svg_5" x1="0" y1="0" x2="1" y2="1">
+   <stop offset="0" stop-color="#7fff00"/>
+   <stop offset="1" stop-color="#007f00"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <circle fill="url(#svg_5)" stroke="#666666" cx="12" cy="12" r="11.18359" id="svg_1"/>
+  <path transform="rotate(90, 14.2158, 11.9991)" fill="#ffffff" stroke="#666666" stroke-linejoin="null" stroke-linecap="null" d="m6.33383,17.94343l7.88233,-11.88682l7.88241,11.88682l-15.76473,0l0,0l-0.00001,0z" id="svg_2"/>
+ </g>
+</svg>
