@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * The mod_url instance list viewed event.
+ * The mod_electaplayback instance list viewed event.
  *
  * @package    mod_electaplayback
  * @copyright  2013 Mark Nelson <markn@moodle.com>
@@ -27,7 +27,7 @@ namespace mod_electaplayback\event;
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * The mod_url instance list viewed event class.
+ * The mod_electaplayback instance list viewed event class.
  *
  * @package    mod_electaplayback
  * @since      Moodle 2.7

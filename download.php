@@ -52,10 +52,9 @@ require_capability('mod/electaplayback:view', $context);
 // log/add record to events system
   $params = array(
       'context' => $context,
-      'objectid' => $electaplayback->id,
-      'other' = >'download'
+      'objectid' => $electaplayback->id
     );
-  $event = \mod_electaplayback\event\course_module_viewed::create($params);
+  $event = \mod_electaplayback\event\course_module_downloaded::create($params);
   $event->add_record_snapshot('course_modules', $cm);
   $event->add_record_snapshot('course', $course);
   $event->add_record_snapshot('electaplayback', $electaplayback);

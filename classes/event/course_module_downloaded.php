@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * The mod_electaplayback course module viewed event.
+ * The mod_electaplayback course module downloaded event.
  *
  * @package    mod_electaplayback
  * @copyright  2013 Mark Nelson <markn@moodle.com>
@@ -27,14 +27,14 @@ namespace mod_electaplayback\event;
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * The mod_electaplayback course module viewed event class.
+ * The mod_electaplayback course module downloaded event class.
  *
  * @package    mod_electaplayback
  * @since      Moodle 2.7
  * @copyright  2013 Mark Nelson <markn@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class course_module_viewed extends \core\event\course_module_viewed {
+class course_module_downloaded extends \core\event\course_module_viewed {
 
     /**
      * Init method.
@@ -45,5 +45,14 @@ class course_module_viewed extends \core\event\course_module_viewed {
         $this->data['objecttable'] = 'electaplayback';
         $this->data['crud'] = 'r';
         $this->data['edulevel'] = self::LEVEL_PARTICIPATING;
+    }
+   /**
+     * Returns description of what happened.
+     *
+     * @return string
+     */
+    public function get_description() {
+        return "The user with id '$this->userid' downloaded the '{$this->objecttable}' activity with " .
+            "course module id '$this->contextinstanceid'.";
     }
 }
