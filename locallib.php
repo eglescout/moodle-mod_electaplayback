@@ -190,12 +190,6 @@ function electaplayback_get_full_url($electaplayback, $cm, $course, $config=null
     return $fullurl;
 }
 
-/* valid eLecta URIs
-				http://node4.nirvanix.com/qPoL8qNO~vK-E-qTpqN~bYGp5irL~B4I26q0DXN~lZkoNRo/eLectaLive/electalive/eLecta/Server/05DB/RecordedSessions/U353177R1165S3754803940.el7?disposition=attachment;filename=test.el7
-				http://www.classroom.bowenehs.com/tools/play_uni.asp?url=http://node4.nirvanix.com/h8QPpVjN~KlI956Rpg9~5-E_1Czq~2MV1SxyQ-M~ZKePgQE/eLectaLive/electalive/eLecta/Server/11rsDB/RecordedSessions/U677491R1165S1665984308.el8
-				
-				*/
-				
 /**
  * Return the full playable URL of an electa file
  *
@@ -210,8 +204,10 @@ function electaplayback_get_playable_url($electaplayback) {
 
     // add playable url prefix
     $config = get_config('electaplayback');
-		$prefix = $config->playurlprefix;
-		$fullurl = $prefix . $fullurl;
+	//	$prefix = $config->playurlprefix;
+    $domain = $config->playurldomain;
+    $play_params = '/tools/play_uni.asp?url=';
+		$fullurl = $domain . $play_params . $fullurl;
 		
 	  // encode all & to &amp; entity
     $fullurl = str_replace('&', '&amp;', $fullurl);

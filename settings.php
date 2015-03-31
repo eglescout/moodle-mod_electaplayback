@@ -35,8 +35,10 @@ if ($ADMIN->fulltree) {
         get_string('configsecretphrase', 'electaplayback'), ''));
     $settings->add(new admin_setting_configcheckbox('electaplayback/rolesinparams',
         get_string('rolesinparams', 'electaplayback'), get_string('configrolesinparams', 'electaplayback'), false));
-		$settings->add(new admin_setting_configtext('electaplayback/playurlprefix', get_string('playurlprefix', 'electaplayback'), 
-				get_string('playurlprefix_desc', 'electaplayback'), get_string('playurlprefix_default', 'electaplayback'), PARAM_URL));
+		//$settings->add(new admin_setting_configtext('electaplayback/playurlprefix', get_string('playurlprefix', 'electaplayback'), 
+			//	get_string('playurlprefix_desc', 'electaplayback'), get_string('playurlprefix_default', 'electaplayback'), PARAM_URL));
+      $settings->add(new admin_setting_configtext('electaplayback/playurldomain', get_string('playurldomain', 'electaplayback'), 
+        get_string('playurldomain_desc', 'electaplayback'), get_string('playurldomain_default', 'electaplayback'), PARAM_URL));
 
 
     //--- modedit defaults -----------------------------------------------------------------------------------
