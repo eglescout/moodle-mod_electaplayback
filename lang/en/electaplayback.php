@@ -57,11 +57,8 @@ $string['parameterinfo'] = '&amp;parameter=variable';
 $string['parametersheader'] = 'Parameters';
 $string['parametersheader_help'] = 'Some internal Moodle variables may be automatically appended to the URL. Type your name for the parameter into each text box(es) and then select the required matching variable.';
 $string['playurllabel'] ='Play';
-$string['playurlprefix'] ='Play URL Prefix';
-$string['playurlprefix_desc'] ='Your eLecta Live play URL prefix used in your eLecta site - Ex. https://www.e-lectazone.com/tools/play_uni.asp?url=';
-$string['playurlprefix_default'] ='https://www.e-lectazone.com/tools/play_uni.asp?url=';
-$string['playurldomain'] ='Play URL Prefix';
-$string['playurldomain_desc'] ='Your eLecta Live domain used in your eLecta site - Ex. https://www.e-lectazone.com';
+$string['playurldomain'] ='eLecta Live domain';
+$string['playurldomain_desc'] ='Your eLecta Live domain used for playback links - Ex. https://www.e-lectazone.com';
 $string['playurldomain_default'] ='https://www.e-lectazone.com';
 
 $string['pluginadministration'] = 'eLecta Playback module administration';

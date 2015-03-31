@@ -204,7 +204,6 @@ function electaplayback_get_playable_url($electaplayback) {
 
     // add playable url prefix
     $config = get_config('electaplayback');
-	//	$prefix = $config->playurlprefix;
     $domain = $config->playurldomain;
     $play_params = '/tools/play_uni.asp?url=';
 		$fullurl = $domain . $play_params . $fullurl;
