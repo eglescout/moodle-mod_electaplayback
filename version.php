@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$module->version   = 2013050503;       // The current module version (Date: YYYYMMDDXX)
-$module->requires  = 2012112900;    // Requires this Moodle version
+$module->version   = 2014050800;       // The current module version (Date: YYYYMMDDXX)
+$module->requires  = 2014050800;    // Requires this Moodle version
 $module->component = 'mod_electaplayback';        // Full name of the plugin (used for diagnostics)
 $module->cron      = 0;
 

@@ -33,7 +33,13 @@ $course = $DB->get_record('course', array('id'=>$id), '*', MUST_EXIST);
 require_course_login($course, true);
 $PAGE->set_pagelayout('incourse');
 
-add_to_log($course->id, 'electaplayback', 'view all', "index.php?id=$course->id", '');
+// log / add record to events system
+$params = array(
+    'context' => context_course::instance($course->id)
+);
+$event = \mod_electaplayback\event\course_module_instance_list_viewed::create($params);
+$event->add_record_snapshot('course', $course);
+$event->trigger();
 
 $strurl       = get_string('modulename', 'electaplayback');
 $strurls      = get_string('modulenameplural', 'electaplayback');

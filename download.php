@@ -47,7 +47,19 @@ require_course_login($course, true, $cm);
 $context = context_module::instance($cm->id);
 require_capability('mod/electaplayback:view', $context);
 
-add_to_log($course->id, 'electaplayback', 'view', 'download.php?id='.$cm->id, $electaplayback->id, $cm->id);
+//add_to_log($course->id, 'electaplayback', 'view', 'download.php?id='.$cm->id, $electaplayback->id, $cm->id);
+
+// log/add record to events system
+  $params = array(
+      'context' => $context,
+      'objectid' => $electaplayback->id,
+      'other' = >'download'
+    );
+  $event = \mod_electaplayback\event\course_module_viewed::create($params);
+  $event->add_record_snapshot('course_modules', $cm);
+  $event->add_record_snapshot('course', $course);
+  $event->add_record_snapshot('electaplayback', $electaplayback);
+  $event->trigger();
 
 // Update 'viewed' state if required by completion system
 $completion = new completion_info($course);
