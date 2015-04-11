@@ -33,9 +33,9 @@ $string['configsecretphrase'] = 'This secret phrase is used to produce encrypted
 $string['contentheader'] = 'Content';
 $string['contentlabel'] = 'Contents:';
 $string['createelectaplayback'] = 'Create an eLecta Playback Link';
-$string['downloadexplain'] = 'Downloads For Windows Only';
+$string['downloadexplain'] = 'Downloads For Windows and Macs (10.7+) Only';
 $string['downloadexplain_help'] = 'Only Windows and Mac OS X (10.7+) machines can play downloaded recordings. Please use the play option for all other operating systems (Macs that need Java to run eLecta, Android, Linux, etc.).';
-$string['downloadexplainshort'] = 'Work on Windows machines only';
+$string['downloadexplainshort'] = 'Works on Windows machines and Mac OS X 10.7 and newer';
 $string['downloadurllabel'] ='Download';
 $string['downloadsuffix'] ='?disposition=attachment';
 $string['electaplayback:addinstance'] = 'Add a new eLecta Playback link';
