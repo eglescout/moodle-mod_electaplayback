@@ -34,7 +34,7 @@ $string['contentheader'] = 'Content';
 $string['contentlabel'] = 'Contents:';
 $string['createelectaplayback'] = 'Create an eLecta Playback Link';
 $string['downloadexplain'] = 'Downloads For Windows Only';
-$string['downloadexplain_help'] = 'Only Windows machines can play downloaded recordings. Please use the play option for all other operating systems (Macs, Android, Linux, etc.).';
+$string['downloadexplain_help'] = 'Only Windows and Mac OS X (10.7+) machines can play downloaded recordings. Please use the play option for all other operating systems (Macs that need Java to run eLecta, Android, Linux, etc.).';
 $string['downloadexplainshort'] = 'Work on Windows machines only';
 $string['downloadurllabel'] ='Download';
 $string['downloadsuffix'] ='?disposition=attachment';
