@@ -52,7 +52,7 @@ Most of these settings allow your Moodle to talk with eLecta. Please see the det
 Earlier Versions
 ----------------
 
-
+See https://github.com/eglescout/moodle-mod_electaplayback for versions.
 
 Credits
 --------
