@@ -47,7 +47,7 @@ Usage & Settings
 
 ### Plugin Settings
 
-Most of these settings allow your Moodle to talk with eLecta. Please see the detailed information listed on the eLecta Live admin page. `[your moodle web address]/admin/settings.php?section=modsettingelectalive`
+eLecta Live Domain: the domain that you log directly into your eLecta account. It is the first part of any play or download link you generate in your account.
 
 Earlier Versions
 ----------------
