@@ -20,5 +20,5 @@ license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
 Electa Playback module
 =============
 
-The eLecta Playback module is a branch of the URL module. It allows users to download or play a link to an eLecta recording. It also allows a content description to be displayed right in the course main page.
+The Electa Playback module is a branch of the URL module. It allows users to download or play a link to an Electa recording. It also allows a content description to be displayed right in the course main page.
 
